@@ -1,0 +1,337 @@
+
+<!doctype html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module aupy2</title>
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>aupy2</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/Users/paul/code/aupy/aupy2.py">/Users/paul/code/aupy/aupy2.py</a></font></td></tr></table>
+    <p><tt>Aupy&nbsp;2.0<br>
+Author:&nbsp;Paul&nbsp;deGrandis<br>
+Created:&nbsp;June&nbsp;02&nbsp;2008<br>
+&nbsp;<br>
+Requires&nbsp;Python&nbsp;2.5<br>
+Copyright&nbsp;(c)&nbsp;2008&nbsp;Paul&nbsp;deGrandis&nbsp;//&nbsp;aupy.org<br>
+&nbsp;<br>
+Permission&nbsp;is&nbsp;hereby&nbsp;granted,&nbsp;free&nbsp;of&nbsp;charge,&nbsp;to&nbsp;any&nbsp;person&nbsp;obtaining&nbsp;a&nbsp;copy<br>
+of&nbsp;this&nbsp;software&nbsp;and&nbsp;associated&nbsp;documentation&nbsp;files&nbsp;(the&nbsp;"Software"),&nbsp;to&nbsp;deal<br>
+in&nbsp;the&nbsp;Software&nbsp;without&nbsp;restriction,&nbsp;including&nbsp;without&nbsp;limitation&nbsp;the&nbsp;rights<br>
+to&nbsp;use,&nbsp;copy,&nbsp;modify,&nbsp;merge,&nbsp;publish,&nbsp;distribute,&nbsp;sublicense,&nbsp;and/or&nbsp;sell<br>
+copies&nbsp;of&nbsp;the&nbsp;Software,&nbsp;and&nbsp;to&nbsp;permit&nbsp;persons&nbsp;to&nbsp;whom&nbsp;the&nbsp;Software&nbsp;is<br>
+furnished&nbsp;to&nbsp;do&nbsp;so,&nbsp;subject&nbsp;to&nbsp;the&nbsp;following&nbsp;conditions:<br>
+&nbsp;<br>
+The&nbsp;above&nbsp;copyright&nbsp;notice&nbsp;and&nbsp;this&nbsp;permission&nbsp;notice&nbsp;shall&nbsp;be&nbsp;included&nbsp;in<br>
+all&nbsp;copies&nbsp;or&nbsp;substantial&nbsp;portions&nbsp;of&nbsp;the&nbsp;Software.<br>
+&nbsp;<br>
+THE&nbsp;SOFTWARE&nbsp;IS&nbsp;PROVIDED&nbsp;"AS&nbsp;IS",&nbsp;WITHOUT&nbsp;WARRANTY&nbsp;OF&nbsp;ANY&nbsp;KIND,&nbsp;EXPRESS&nbsp;OR<br>
+IMPLIED,&nbsp;INCLUDING&nbsp;BUT&nbsp;NOT&nbsp;LIMITED&nbsp;TO&nbsp;THE&nbsp;WARRANTIES&nbsp;OF&nbsp;MERCHANTABILITY,<br>
+FITNESS&nbsp;FOR&nbsp;A&nbsp;PARTICULAR&nbsp;PURPOSE&nbsp;AND&nbsp;NONINFRINGEMENT.&nbsp;IN&nbsp;NO&nbsp;EVENT&nbsp;SHALL&nbsp;THE<br>
+AUTHORS&nbsp;OR&nbsp;COPYRIGHT&nbsp;HOLDERS&nbsp;BE&nbsp;LIABLE&nbsp;FOR&nbsp;ANY&nbsp;CLAIM,&nbsp;DAMAGES&nbsp;OR&nbsp;OTHER<br>
+LIABILITY,&nbsp;WHETHER&nbsp;IN&nbsp;AN&nbsp;ACTION&nbsp;OF&nbsp;CONTRACT,&nbsp;TORT&nbsp;OR&nbsp;OTHERWISE,&nbsp;ARISING&nbsp;FROM,<br>
+OUT&nbsp;OF&nbsp;OR&nbsp;IN&nbsp;CONNECTION&nbsp;WITH&nbsp;THE&nbsp;SOFTWARE&nbsp;OR&nbsp;THE&nbsp;USE&nbsp;OR&nbsp;OTHER&nbsp;DEALINGS&nbsp;IN<br>
+THE&nbsp;SOFTWARE.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#fffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="sys.html">sys</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="__builtin__.html#object">__builtin__.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="aupy2.html#Utility">Utility</a>
+</font></dt></dl>
+</dd>
+<dt><font face="helvetica, arial"><a href="__builtin__.html#type">__builtin__.type</a>(<a href="__builtin__.html#object">__builtin__.object</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="aupy2.html#RegisterUtilityMethods">RegisterUtilityMethods</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="RegisterUtilityMethods">class <strong>RegisterUtilityMethods</strong></a>(<a href="__builtin__.html#type">__builtin__.type</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>A&nbsp;metaclass&nbsp;to&nbsp;auto&nbsp;register&nbsp;utility&nbsp;methods<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="aupy2.html#RegisterUtilityMethods">RegisterUtilityMethods</a></dd>
+<dd><a href="__builtin__.html#type">__builtin__.type</a></dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Static methods defined here:<br>
+<dl><dt><a name="RegisterUtilityMethods-__new__"><strong>__new__</strong></a>(mcls, classname, bases, classdict)</dt><dd><tt>Auto&nbsp;register&nbsp;all&nbsp;utility&nbsp;methods<br>
+Do&nbsp;this&nbsp;in&nbsp;a&nbsp;similar&nbsp;manner&nbsp;as&nbsp;the&nbsp;earlier&nbsp;version&nbsp;of&nbsp;Aupy&nbsp;did</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="__builtin__.html#type">__builtin__.type</a>:<br>
+<dl><dt><a name="RegisterUtilityMethods-__call__"><strong>__call__</strong></a>(...)</dt><dd><tt>x.<a href="#RegisterUtilityMethods-__call__">__call__</a>(...)&nbsp;&lt;==&gt;&nbsp;x(...)</tt></dd></dl>
+
+<dl><dt><a name="RegisterUtilityMethods-__cmp__"><strong>__cmp__</strong></a>(...)</dt><dd><tt>x.<a href="#RegisterUtilityMethods-__cmp__">__cmp__</a>(y)&nbsp;&lt;==&gt;&nbsp;cmp(x,y)</tt></dd></dl>
+
+<dl><dt><a name="RegisterUtilityMethods-__delattr__"><strong>__delattr__</strong></a>(...)</dt><dd><tt>x.<a href="#RegisterUtilityMethods-__delattr__">__delattr__</a>('name')&nbsp;&lt;==&gt;&nbsp;del&nbsp;x.name</tt></dd></dl>
+
+<dl><dt><a name="RegisterUtilityMethods-__getattribute__"><strong>__getattribute__</strong></a>(...)</dt><dd><tt>x.<a href="#RegisterUtilityMethods-__getattribute__">__getattribute__</a>('name')&nbsp;&lt;==&gt;&nbsp;x.name</tt></dd></dl>
+
+<dl><dt><a name="RegisterUtilityMethods-__hash__"><strong>__hash__</strong></a>(...)</dt><dd><tt>x.<a href="#RegisterUtilityMethods-__hash__">__hash__</a>()&nbsp;&lt;==&gt;&nbsp;hash(x)</tt></dd></dl>
+
+<dl><dt><a name="RegisterUtilityMethods-__repr__"><strong>__repr__</strong></a>(...)</dt><dd><tt>x.<a href="#RegisterUtilityMethods-__repr__">__repr__</a>()&nbsp;&lt;==&gt;&nbsp;repr(x)</tt></dd></dl>
+
+<dl><dt><a name="RegisterUtilityMethods-__setattr__"><strong>__setattr__</strong></a>(...)</dt><dd><tt>x.<a href="#RegisterUtilityMethods-__setattr__">__setattr__</a>('name',&nbsp;value)&nbsp;&lt;==&gt;&nbsp;x.name&nbsp;=&nbsp;value</tt></dd></dl>
+
+<dl><dt><a name="RegisterUtilityMethods-__subclasses__"><strong>__subclasses__</strong></a>(...)</dt><dd><tt><a href="#RegisterUtilityMethods-__subclasses__">__subclasses__</a>()&nbsp;-&gt;&nbsp;list&nbsp;of&nbsp;immediate&nbsp;subclasses</tt></dd></dl>
+
+<dl><dt><a name="RegisterUtilityMethods-mro"><strong>mro</strong></a>(...)</dt><dd><tt><a href="#RegisterUtilityMethods-mro">mro</a>()&nbsp;-&gt;&nbsp;list<br>
+return&nbsp;a&nbsp;<a href="__builtin__.html#type">type</a>'s&nbsp;method&nbsp;resolution&nbsp;order</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="__builtin__.html#type">__builtin__.type</a>:<br>
+<dl><dt><strong>__base__</strong></dt>
+</dl>
+<dl><dt><strong>__bases__</strong></dt>
+</dl>
+<dl><dt><strong>__basicsize__</strong></dt>
+</dl>
+<dl><dt><strong>__dict__</strong></dt>
+</dl>
+<dl><dt><strong>__dictoffset__</strong></dt>
+</dl>
+<dl><dt><strong>__flags__</strong></dt>
+</dl>
+<dl><dt><strong>__itemsize__</strong></dt>
+</dl>
+<dl><dt><strong>__mro__</strong></dt>
+</dl>
+<dl><dt><strong>__weakrefoffset__</strong></dt>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Utility">class <strong>Utility</strong></a>(<a href="__builtin__.html#object">__builtin__.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>A&nbsp;class&nbsp;containing&nbsp;all&nbsp;necessary&nbsp;functionality&nbsp;for&nbsp;<br>
+utility&nbsp;creation&nbsp;and&nbsp;interaction.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Static methods defined here:<br>
+<dl><dt><a name="Utility-checkUtilityResult"><strong>checkUtilityResult</strong></a>(utilityFunc, *args, **kwargs)</dt><dd><tt>Evaluate&nbsp;a&nbsp;utility&nbsp;function's&nbsp;result&nbsp;against&nbsp;a&nbsp;specific&nbsp;evaluation&nbsp;function.<br>
+The&nbsp;evaluation&nbsp;function&nbsp;can&nbsp;be&nbsp;used&nbsp;to&nbsp;specify&nbsp;thresholds,&nbsp;but&nbsp;by&nbsp;default<br>
+uses&nbsp;the&nbsp;bool&nbsp;function.&nbsp;&nbsp;All&nbsp;callback&nbsp;info&nbsp;is&nbsp;removed&nbsp;before&nbsp;evaluation.<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;utilityFunc&nbsp;-&nbsp;the&nbsp;function&nbsp;to&nbsp;call&nbsp;to&nbsp;generate&nbsp;the&nbsp;result;&nbsp;the&nbsp;utility&nbsp;function<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[evalFunc]&nbsp;-&nbsp;the&nbsp;evaluation&nbsp;function&nbsp;for&nbsp;utilityFunc's&nbsp;result<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;THIS&nbsp;MUST&nbsp;BE&nbsp;PASSED&nbsp;AS&nbsp;A&nbsp;KEYWORD&nbsp;ARG!<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IT&nbsp;WILL&nbsp;GET&nbsp;POPPED&nbsp;BEFORE&nbsp;f&nbsp;IS&nbsp;EVALUATED;&nbsp;IT&nbsp;WILL&nbsp;NOT&nbsp;BE&nbsp;IN&nbsp;f's&nbsp;KWARGS!<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;func_result&nbsp;-&nbsp;the&nbsp;function's,&nbsp;utilityFunc's,&nbsp;result<br>
+Raises:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Utility">Utility</a>.UtilityError&nbsp;if&nbsp;utilityFunc's&nbsp;result&nbsp;fails&nbsp;the&nbsp;evaluation</tt></dd></dl>
+
+<dl><dt><a name="Utility-concurrent_utility"><strong>concurrent_utility</strong></a>(f)</dt><dd><tt>A&nbsp;decorator&nbsp;to&nbsp;mark&nbsp;a&nbsp;function&nbsp;or&nbsp;method&nbsp;as&nbsp;a&nbsp;concurrent&nbsp;utility&nbsp;method.<br>
+See&nbsp;the&nbsp;utility&nbsp;method&nbsp;decorator&nbsp;for&nbsp;more&nbsp;information.</tt></dd></dl>
+
+<dl><dt><a name="Utility-contextConcurrentUtility"><strong>contextConcurrentUtility</strong></a>(*args, **kwds)</dt><dd><tt>A&nbsp;context&nbsp;for&nbsp;block-wise&nbsp;concurrent-utility.<br>
+&nbsp;<br>
+This&nbsp;method&nbsp;will&nbsp;evaluate&nbsp;your&nbsp;function&nbsp;result&nbsp;with&nbsp;a&nbsp;keyword<br>
+arg&nbsp;passed&nbsp;function,&nbsp;evalFunc.&nbsp;&nbsp;If&nbsp;this&nbsp;is&nbsp;not&nbsp;passed&nbsp;in,<br>
+the&nbsp;function&nbsp;result&nbsp;is&nbsp;evaluted&nbsp;with&nbsp;bool.&nbsp;&nbsp;A&nbsp;<a href="#Utility">Utility</a>.UtilityError<br>
+is&nbsp;raised&nbsp;if&nbsp;the&nbsp;result&nbsp;fails&nbsp;the&nbsp;evaluation.&nbsp;&nbsp;Otherwise<br>
+the&nbsp;developer&nbsp;must&nbsp;raise&nbsp;UtilityError&nbsp;or&nbsp;some&nbsp;child&nbsp;thereof<br>
+within&nbsp;the&nbsp;function&nbsp;(for&nbsp;finer&nbsp;control)<br>
+&nbsp;<br>
+Support&nbsp;for&nbsp;callbacks&nbsp;are&nbsp;via&nbsp;any&nbsp;callable&nbsp;<a href="__builtin__.html#object">object</a>&nbsp;passed&nbsp;in&nbsp;as<br>
+a&nbsp;kwarg&nbsp;as&nbsp;'utilityCallback'.&nbsp;&nbsp;Args&nbsp;to&nbsp;this&nbsp;callable&nbsp;can&nbsp;be&nbsp;passed<br>
+in&nbsp;as&nbsp;'utilityCallbackArgs'.&nbsp;&nbsp;If&nbsp;no&nbsp;callback&nbsp;args&nbsp;are&nbsp;passed,&nbsp;the<br>
+arg&nbsp;list&nbsp;passed&nbsp;to&nbsp;the&nbsp;function&nbsp;will&nbsp;be&nbsp;passed&nbsp;onto&nbsp;the&nbsp;callback.<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;utilityFunc&nbsp;-&nbsp;a&nbsp;utility&nbsp;function&nbsp;used&nbsp;for&nbsp;evalutation,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;function&nbsp;does&nbsp;not&nbsp;have&nbsp;to&nbsp;be&nbsp;decorated&nbsp;as&nbsp;utility,&nbsp;it&nbsp;can&nbsp;be&nbsp;any&nbsp;function&nbsp;whatsoever<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;args&nbsp;-&nbsp;collection&nbsp;of&nbsp;args,&nbsp;passed&nbsp;to&nbsp;the&nbsp;function,&nbsp;utilityFunc<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kwargs&nbsp;-&nbsp;a&nbsp;dictionary&nbsp;of&nbsp;keyword&nbsp;args,&nbsp;passed&nbsp;to&nbsp;the&nbsp;function,&nbsp;utilityFunc<br>
+Yields:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;concurrent&nbsp;utility&nbsp;thread&nbsp;start()&nbsp;status</tt></dd></dl>
+
+<dl><dt><a name="Utility-contextPostUtility"><strong>contextPostUtility</strong></a>(*args, **kwds)</dt><dd><tt>A&nbsp;context&nbsp;for&nbsp;block-wise&nbsp;post-utility.<br>
+&nbsp;<br>
+This&nbsp;method&nbsp;will&nbsp;evaluate&nbsp;your&nbsp;function&nbsp;result&nbsp;with&nbsp;a&nbsp;keyword<br>
+arg&nbsp;passed&nbsp;function,&nbsp;evalFunc.&nbsp;&nbsp;If&nbsp;this&nbsp;is&nbsp;not&nbsp;passed&nbsp;in,<br>
+the&nbsp;function&nbsp;result&nbsp;is&nbsp;evaluted&nbsp;with&nbsp;bool.&nbsp;&nbsp;A&nbsp;<a href="#Utility">Utility</a>.UtilityError<br>
+is&nbsp;raised&nbsp;if&nbsp;the&nbsp;result&nbsp;fails&nbsp;the&nbsp;evaluation.&nbsp;&nbsp;Otherwise<br>
+the&nbsp;developer&nbsp;must&nbsp;raise&nbsp;UtilityError&nbsp;or&nbsp;some&nbsp;child&nbsp;thereof<br>
+within&nbsp;the&nbsp;function&nbsp;(for&nbsp;finer&nbsp;control)<br>
+&nbsp;<br>
+Support&nbsp;for&nbsp;callbacks&nbsp;are&nbsp;via&nbsp;any&nbsp;callable&nbsp;<a href="__builtin__.html#object">object</a>&nbsp;passed&nbsp;in&nbsp;as<br>
+a&nbsp;kwarg&nbsp;as&nbsp;'utilityCallback'.&nbsp;&nbsp;Args&nbsp;to&nbsp;this&nbsp;callable&nbsp;can&nbsp;be&nbsp;passed<br>
+in&nbsp;as&nbsp;'utilityCallbackArgs'.&nbsp;&nbsp;If&nbsp;no&nbsp;callback&nbsp;args&nbsp;are&nbsp;passed,&nbsp;the<br>
+arg&nbsp;list&nbsp;passed&nbsp;to&nbsp;the&nbsp;function&nbsp;will&nbsp;be&nbsp;passed&nbsp;onto&nbsp;the&nbsp;callback.<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;utilityFunc&nbsp;-&nbsp;a&nbsp;utility&nbsp;function&nbsp;used&nbsp;for&nbsp;evalutation,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;function&nbsp;does&nbsp;not&nbsp;have&nbsp;to&nbsp;be&nbsp;decorated&nbsp;as&nbsp;utility,&nbsp;it&nbsp;can&nbsp;be&nbsp;any&nbsp;function&nbsp;whatsoever<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;args&nbsp;-&nbsp;collection&nbsp;of&nbsp;args,&nbsp;passed&nbsp;to&nbsp;the&nbsp;function,&nbsp;utilityFunc<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kwargs&nbsp;-&nbsp;a&nbsp;dictionary&nbsp;of&nbsp;keyword&nbsp;args,&nbsp;passed&nbsp;to&nbsp;the&nbsp;function,&nbsp;utilityFunc<br>
+Yields:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;result&nbsp;of&nbsp;the&nbsp;first&nbsp;evaluation&nbsp;of&nbsp;your&nbsp;function,&nbsp;utilityFunc</tt></dd></dl>
+
+<dl><dt><a name="Utility-contextPreUtility"><strong>contextPreUtility</strong></a>(*args, **kwds)</dt><dd><tt>A&nbsp;context&nbsp;for&nbsp;block-wise&nbsp;pre-utility.<br>
+&nbsp;<br>
+This&nbsp;method&nbsp;will&nbsp;evaluate&nbsp;your&nbsp;function&nbsp;result&nbsp;with&nbsp;a&nbsp;keyword<br>
+arg&nbsp;passed&nbsp;function,&nbsp;evalFunc.&nbsp;&nbsp;If&nbsp;this&nbsp;is&nbsp;not&nbsp;passed&nbsp;in,<br>
+the&nbsp;function&nbsp;result&nbsp;is&nbsp;evaluted&nbsp;with&nbsp;bool.&nbsp;&nbsp;A&nbsp;<a href="#Utility">Utility</a>.UtilityError<br>
+is&nbsp;raised&nbsp;if&nbsp;the&nbsp;result&nbsp;fails&nbsp;the&nbsp;evaluation.&nbsp;&nbsp;Otherwise<br>
+the&nbsp;developer&nbsp;must&nbsp;raise&nbsp;UtilityError&nbsp;or&nbsp;some&nbsp;child&nbsp;thereof<br>
+within&nbsp;the&nbsp;function&nbsp;(for&nbsp;finer&nbsp;control)<br>
+&nbsp;<br>
+Support&nbsp;for&nbsp;callbacks&nbsp;are&nbsp;via&nbsp;any&nbsp;callable&nbsp;<a href="__builtin__.html#object">object</a>&nbsp;passed&nbsp;in&nbsp;as<br>
+a&nbsp;kwarg&nbsp;as&nbsp;'utilityCallback'.&nbsp;&nbsp;Args&nbsp;to&nbsp;this&nbsp;callable&nbsp;can&nbsp;be&nbsp;passed<br>
+in&nbsp;as&nbsp;'utilityCallbackArgs'.&nbsp;&nbsp;If&nbsp;no&nbsp;callback&nbsp;args&nbsp;are&nbsp;passed,&nbsp;the<br>
+arg&nbsp;list&nbsp;passed&nbsp;to&nbsp;the&nbsp;function&nbsp;will&nbsp;be&nbsp;passed&nbsp;onto&nbsp;the&nbsp;callback.<br>
+If&nbsp;the&nbsp;first&nbsp;utility&nbsp;check&nbsp;fails,&nbsp;a&nbsp;UtilityError&nbsp;will&nbsp;be&nbsp;yielded.<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;utilityFunc&nbsp;-&nbsp;a&nbsp;utility&nbsp;function&nbsp;used&nbsp;for&nbsp;evalutation,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;function&nbsp;does&nbsp;not&nbsp;have&nbsp;to&nbsp;be&nbsp;decorated&nbsp;as&nbsp;utility,&nbsp;it&nbsp;can&nbsp;be&nbsp;any&nbsp;function&nbsp;whatsoever<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;args&nbsp;-&nbsp;collection&nbsp;of&nbsp;args,&nbsp;passed&nbsp;to&nbsp;the&nbsp;function,&nbsp;utilityFunc<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kwargs&nbsp;-&nbsp;a&nbsp;dictionary&nbsp;of&nbsp;keyword&nbsp;args,&nbsp;passed&nbsp;to&nbsp;the&nbsp;function,&nbsp;utilityFunc<br>
+Yields:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;result&nbsp;of&nbsp;the&nbsp;first&nbsp;evaluation&nbsp;of&nbsp;your&nbsp;function,&nbsp;utilityFunc<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;the&nbsp;pre&nbsp;evaluated&nbsp;context&nbsp;fails,&nbsp;a&nbsp;UtilityError&nbsp;will&nbsp;be&nbsp;yielded;&nbsp;check&nbsp;for&nbsp;it!</tt></dd></dl>
+
+<dl><dt><a name="Utility-contextUtility"><strong>contextUtility</strong></a>(*args, **kwds)</dt><dd><tt>A&nbsp;context&nbsp;for&nbsp;block-wise&nbsp;utility.<br>
+&nbsp;<br>
+This&nbsp;method&nbsp;will&nbsp;evaluate&nbsp;your&nbsp;function&nbsp;result&nbsp;with&nbsp;a&nbsp;keyword<br>
+arg&nbsp;passed&nbsp;function,&nbsp;evalFunc.&nbsp;&nbsp;If&nbsp;this&nbsp;is&nbsp;not&nbsp;passed&nbsp;in,<br>
+the&nbsp;function&nbsp;result&nbsp;is&nbsp;evaluted&nbsp;with&nbsp;bool.&nbsp;&nbsp;A&nbsp;<a href="#Utility">Utility</a>.UtilityError<br>
+is&nbsp;raised&nbsp;if&nbsp;the&nbsp;result&nbsp;fails&nbsp;the&nbsp;evaluation.&nbsp;&nbsp;Otherwise<br>
+the&nbsp;developer&nbsp;must&nbsp;raise&nbsp;UtilityError&nbsp;or&nbsp;some&nbsp;child&nbsp;thereof<br>
+within&nbsp;the&nbsp;function&nbsp;(for&nbsp;finer&nbsp;control)<br>
+&nbsp;<br>
+Support&nbsp;for&nbsp;callbacks&nbsp;are&nbsp;via&nbsp;any&nbsp;callable&nbsp;<a href="__builtin__.html#object">object</a>&nbsp;passed&nbsp;in&nbsp;as<br>
+a&nbsp;kwarg&nbsp;as&nbsp;'utilityCallback'.&nbsp;&nbsp;Args&nbsp;to&nbsp;this&nbsp;callable&nbsp;can&nbsp;be&nbsp;passed<br>
+in&nbsp;as&nbsp;'utilityCallbackArgs'.&nbsp;&nbsp;If&nbsp;no&nbsp;callback&nbsp;args&nbsp;are&nbsp;passed,&nbsp;the<br>
+arg&nbsp;list&nbsp;passed&nbsp;to&nbsp;the&nbsp;function&nbsp;will&nbsp;be&nbsp;passed&nbsp;onto&nbsp;the&nbsp;callback.<br>
+If&nbsp;the&nbsp;first&nbsp;utility&nbsp;check&nbsp;fails,&nbsp;a&nbsp;UtilityError&nbsp;will&nbsp;be&nbsp;yielded.<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;utilityFunc&nbsp;-&nbsp;a&nbsp;utility&nbsp;function&nbsp;used&nbsp;for&nbsp;evalutation,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;function&nbsp;does&nbsp;not&nbsp;have&nbsp;to&nbsp;be&nbsp;decorated&nbsp;as&nbsp;utility,&nbsp;it&nbsp;can&nbsp;be&nbsp;any&nbsp;function&nbsp;whatsoever<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;args&nbsp;-&nbsp;collection&nbsp;of&nbsp;args,&nbsp;passed&nbsp;to&nbsp;the&nbsp;function,&nbsp;utilityFunc<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kwargs&nbsp;-&nbsp;a&nbsp;dictionary&nbsp;of&nbsp;keyword&nbsp;args,&nbsp;passed&nbsp;to&nbsp;the&nbsp;function,&nbsp;utilityFunc<br>
+Yields:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;result&nbsp;of&nbsp;the&nbsp;first&nbsp;evaluation&nbsp;of&nbsp;your&nbsp;function,&nbsp;utilityFunc<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;the&nbsp;pre&nbsp;evaluated&nbsp;context&nbsp;fails,&nbsp;a&nbsp;UtilityError&nbsp;will&nbsp;be&nbsp;yielded;&nbsp;check&nbsp;for&nbsp;it!</tt></dd></dl>
+
+<dl><dt><a name="Utility-getAllRegisteredUtilityFunctions"><strong>getAllRegisteredUtilityFunctions</strong></a>(self_or_dict<font color="#909090">=None</font>)</dt><dd><tt>Returns&nbsp;all&nbsp;utility&nbsp;functions&nbsp;within&nbsp;all&nbsp;given&nbsp;scopes.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Scope&nbsp;is&nbsp;determined&nbsp;by&nbsp;a&nbsp;function&nbsp;<a href="__builtin__.html#object">object</a>&nbsp;passed&nbsp;in.<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self_or_dict&nbsp;-&nbsp;the&nbsp;<a href="__builtin__.html#object">object</a>'s&nbsp;identity&nbsp;reference&nbsp;or&nbsp;the&nbsp;<a href="__builtin__.html#object">object</a>'s&nbsp;dictionary<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;all_utils&nbsp;-&nbsp;list&nbsp;of&nbsp;all&nbsp;available&nbsp;utility&nbsp;functions</tt></dd></dl>
+
+<dl><dt><a name="Utility-handleCallback"><strong>handleCallback</strong></a>(*args, **kwargs)</dt><dd><tt>Handle&nbsp;callbacks&nbsp;for&nbsp;<a href="#Utility">Utility</a>&nbsp;Exceptions.<br>
+This&nbsp;is&nbsp;mostly&nbsp;used&nbsp;internally&nbsp;for&nbsp;contexts,&nbsp;but&nbsp;can&nbsp;be&nbsp;used&nbsp;by&nbsp;developers.<br>
+&nbsp;<br>
+Arguments&nbsp;(All&nbsp;must&nbsp;be&nbsp;passed&nbsp;via&nbsp;keyword&nbsp;arguments):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[utilityCallback]&nbsp;-&nbsp;the&nbsp;callback&nbsp;function;&nbsp;If&nbsp;not&nbsp;specified,&nbsp;no&nbsp;callback&nbsp;will&nbsp;take&nbsp;place<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[utilityCallbackArgs]&nbsp;-&nbsp;arguments&nbsp;to&nbsp;pass&nbsp;to&nbsp;the&nbsp;callback&nbsp;function,&nbsp;if&nbsp;not&nbsp;specified,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;args&nbsp;pass&nbsp;to&nbsp;this&nbsp;handler&nbsp;will&nbsp;be&nbsp;used<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;utilityCallback(utilityCallbackArgs)<br>
+Raises:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise&nbsp;-&nbsp;if&nbsp;no&nbsp;callback&nbsp;is&nbsp;specified,&nbsp;a&nbsp;call&nbsp;to&nbsp;raise&nbsp;takes&nbsp;place.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;is&nbsp;because&nbsp;this&nbsp;is&nbsp;mostly&nbsp;used&nbsp;within&nbsp;contexts,&nbsp;where<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this&nbsp;behavior&nbsp;makes&nbsp;sense&nbsp;(an&nbsp;exception&nbsp;within&nbsp;the&nbsp;user-defined&nbsp;block)</tt></dd></dl>
+
+<dl><dt><a name="Utility-isUtilityMethod"><strong>isUtilityMethod</strong></a>(func, self_or_dict<font color="#909090">=[]</font>)</dt><dd><tt>Checks&nbsp;the&nbsp;current&nbsp;registered&nbsp;functions&nbsp;to&nbsp;see&nbsp;if<br>
+a&nbsp;given&nbsp;function&nbsp;is&nbsp;a&nbsp;known&nbsp;utility&nbsp;method.<br>
+Please&nbsp;also&nbsp;see&nbsp;isValidUtilityMethod.<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;func&nbsp;-&nbsp;the&nbsp;function&nbsp;in&nbsp;question<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[self_or_dict]&nbsp;-&nbsp;an&nbsp;<a href="__builtin__.html#object">object</a>'s&nbsp;identity&nbsp;reference&nbsp;or&nbsp;dictionary&nbsp;(for&nbsp;scoping)<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result&nbsp;-&nbsp;a&nbsp;boolean</tt></dd></dl>
+
+<dl><dt><a name="Utility-isValidUtilityMethod"><strong>isValidUtilityMethod</strong></a>(func)</dt><dd><tt>Allows&nbsp;reflection&nbsp;to&nbsp;work&nbsp;on&nbsp;utility&nbsp;methods;&nbsp;<br>
+Answers:&nbsp;'Could&nbsp;this&nbsp;be&nbsp;a&nbsp;utility&nbsp;method?'</tt></dd></dl>
+
+<dl><dt><a name="Utility-monitor"><strong>monitor</strong></a>(f, *utility_funcs)</dt><dd><tt>Decorates&nbsp;methods&nbsp;or&nbsp;functions&nbsp;that&nbsp;should&nbsp;be&nbsp;monitored&nbsp;and&nbsp;verified<br>
+by&nbsp;utility&nbsp;functions&nbsp;(those&nbsp;decorated&nbsp;with&nbsp;@utility&nbsp;or&nbsp;similar)<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*util_funcs&nbsp;-&nbsp;the&nbsp;utility&nbsp;functions&nbsp;that&nbsp;should&nbsp;monitor&nbsp;this&nbsp;operations<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;absent&nbsp;or&nbsp;passed&nbsp;as&nbsp;None,&nbsp;ALL&nbsp;availble&nbsp;utility&nbsp;functions&nbsp;in&nbsp;class&nbsp;wide<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and&nbsp;global&nbsp;scope&nbsp;will&nbsp;be&nbsp;used..<br>
+Notes:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;you&nbsp;monitor&nbsp;a&nbsp;global&nbsp;function,&nbsp;only&nbsp;global&nbsp;utility&nbsp;functions&nbsp;will&nbsp;be&nbsp;available<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;you&nbsp;monitor&nbsp;a&nbsp;method,&nbsp;class&nbsp;wide&nbsp;and&nbsp;global&nbsp;utility&nbsp;functions&nbsp;are&nbsp;available</tt></dd></dl>
+
+<dl><dt><a name="Utility-post_utility"><strong>post_utility</strong></a>(f)</dt><dd><tt>A&nbsp;decorator&nbsp;to&nbsp;mark&nbsp;a&nbsp;function&nbsp;or&nbsp;method&nbsp;as&nbsp;a&nbsp;post&nbsp;utility&nbsp;method.<br>
+See&nbsp;the&nbsp;utility&nbsp;method&nbsp;decorator&nbsp;for&nbsp;more&nbsp;information.</tt></dd></dl>
+
+<dl><dt><a name="Utility-pre_utility"><strong>pre_utility</strong></a>(f)</dt><dd><tt>A&nbsp;decorator&nbsp;to&nbsp;mark&nbsp;a&nbsp;function&nbsp;or&nbsp;method&nbsp;as&nbsp;a&nbsp;pre&nbsp;utility&nbsp;method.<br>
+See&nbsp;the&nbsp;utility&nbsp;method&nbsp;decorator&nbsp;for&nbsp;more&nbsp;information.</tt></dd></dl>
+
+<dl><dt><a name="Utility-registerAllGlobalUtilityFunctions"><strong>registerAllGlobalUtilityFunctions</strong></a>()</dt><dd><tt>Registers&nbsp;Global&nbsp;space&nbsp;utility&nbsp;functions<br>
+This&nbsp;is&nbsp;instead&nbsp;of&nbsp;runtime&nbsp;discovery</tt></dd></dl>
+
+<dl><dt><a name="Utility-sortUtilityFunctions"><strong>sortUtilityFunctions</strong></a>(all_utils)</dt><dd><tt>Sort&nbsp;out&nbsp;all&nbsp;pre,&nbsp;post,&nbsp;and&nbsp;concurrent&nbsp;utility&nbsp;functions<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;all_utils&nbsp;-&nbsp;a&nbsp;list&nbsp;of&nbsp;valid&nbsp;utility&nbsp;functions<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pre_utils,&nbsp;post_utils,&nbsp;concurrent_utils&nbsp;-&nbsp;lists&nbsp;of&nbsp;utility&nbsp;functions</tt></dd></dl>
+
+<dl><dt><a name="Utility-utility"><strong>utility</strong></a>(f)</dt><dd><tt>A&nbsp;decorator&nbsp;to&nbsp;mark&nbsp;a&nbsp;function&nbsp;or&nbsp;method&nbsp;as&nbsp;a&nbsp;utility&nbsp;method.<br>
+&nbsp;<br>
+This&nbsp;is&nbsp;to&nbsp;be&nbsp;used&nbsp;with&nbsp;the&nbsp;@monitor&nbsp;decorator.<br>
+If&nbsp;a&nbsp;global&nbsp;function&nbsp;is&nbsp;decorated,&nbsp;it'll&nbsp;be&nbsp;available&nbsp;in&nbsp;global&nbsp;scope&nbsp;to&nbsp;all&nbsp;monitored&nbsp;methods.<br>
+If&nbsp;a&nbsp;method&nbsp;is&nbsp;decorated,&nbsp;it'll&nbsp;be&nbsp;available&nbsp;in&nbsp;class&nbsp;scope&nbsp;to&nbsp;monitored&nbsp;methods.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>UtilityError</strong> = &lt;class 'aupy2.UtilityError'&gt;<dd><tt>A&nbsp;class&nbsp;for&nbsp;general&nbsp;utility&nbsp;method&nbsp;errors</tt></dl>
+
+<dl><dt><strong>UtilityMethodsMixIn</strong> = &lt;class 'aupy2.UtilityMethodsMixIn'&gt;<dd><tt>This&nbsp;mixin&nbsp;provides&nbsp;the&nbsp;extra&nbsp;functionality&nbsp;for&nbsp;classes<br>
+that&nbsp;contain&nbsp;<a href="#Utility">Utility</a>&nbsp;Methods.<br>
+Currently&nbsp;this&nbsp;is&nbsp;only&nbsp;auto&nbsp;<a href="#Utility">Utility</a>&nbsp;Method&nbsp;Registration.</tt></dl>
+
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>with_statement</strong> = _Feature((2, 5, 0, 'alpha', 1), (2, 6, 0, 'alpha', 0), 32768)</td></tr></table>
+</body></html>

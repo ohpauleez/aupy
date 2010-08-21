@@ -1,0 +1,102 @@
+
+AUPY - Application Utility for Python
+Version: 1.0
+Released on: November 20, 2007
+Version: 2.0
+Released on: October 10, 2008
+
+====
+IMPORTANT NOTICE:
+=======================
+The codebase for Aupy2 is outdated and needs to be improved.
+Some backwards compatible features (for Aupy1.0 style use) are buggy.
+A updated version, using Python2.7 and current best practices is being
+done in my spare time.  The current version should still be considered
+proof-of-concept.
+
+
+=====
+OVERVIEW:
+=======================
+
+AUPY is a bundle of utilties used to create and use utility functions within
+your python code to evaluate a program's performance and behavior.  While the
+idea of application utility was originally developed for economic models
+and later applied in AI applications, it is extremely useful to create 
+self-aware and self-monitoring applications; crucial in creating applications
+that exercise autonomic abilities and characteristics.
+
+Autonomic applications exercise four core self-managing characteristics:
+Self-Configuration:
+Self-Healing:
+Self-Optimization:
+Self-Protecting:
+
+Of these, AUPY can aid in achieving all except self-configuration.
+
+These four characteristics can be employed at five levels of effectiveness
+within autonomic systems, as defined by IBM:
+Level 1 (Basic): All elements are managed independently; most systems today
+Level 2 (Managed): Systems are collected and managed in groups.  System
+  Awareness exists in some capacity and productivity is increased.
+Level 3 (Predictive): The system collects and monitors data, recognizing
+  patterns of operation and behavior.  This reduces the need for deep
+  skills and system administration.
+Level 4 (Adaptive): The system uses the monitored data and recognized
+  patterns to take specific actions known as Service-Level Agreements.
+  These actions manage performance, healing, and protection.
+Level 5 (Autonomic): All components create a fully integrated and dynamic
+  system completely managed by business rules and high level goals.
+
+AUPY can aid in achieving up to level 4.
+
+
+
+=====
+FILE MANIFEST:
+=======================
+
+aupe.py - all of the AUPY functionality and decorators.  This file is
+  used to define utility functions, functions to be monitored,
+  atomic transaction functions, time-out functions, and more.
+
+aupe_ftp.py - a self-aware FTP class for ftplib.
+
+aupe_socket.py - a self-aware socket library.  Currently it monitors throughput
+
+binary_dl_client.py - an ftp client that is self-aware, using aupe_ftp, and
+  optionally aupe_socket
+
+example.py - example usage of aupe and its abilities
+
+proc.py - a wrapper to gather information on linux systems from /proc
+
+socket.py - a soft link to either aupe_socket.py or _org_socket.py, the
+  originally socket library.  Pointing this to aupe_socket.py inheritly
+  makes ALL networked applications exercise the abilities of having
+  application level utility for network operations.
+
+
+=====
+NOTES:
+=======================
+
+AUPY IS DEPENDENT ON PCAP
+
+There is still a lot of work to be done and aupy should be considered a
+proof-of-concept of bringing elementary level application utility into
+a language.  I wrote the original functionality in about an hour to
+illustrate to the Software Engineering Research Group at Drexel
+University the benefits of basic autonomic abilities in software.
+
+
+=====
+CONTACT:
+=======================
+Paul deGrandis
+paul.degrandis@gmail.edu
+
+Thanks for checking AUPY out!
+
+
+
